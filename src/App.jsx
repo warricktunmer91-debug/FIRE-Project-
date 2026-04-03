@@ -134,7 +134,7 @@ export default function App() {
               />
             )}
             {activeTab === 'budget' && (
-              <BudgetTab projection={projection} assumptions={assumptions} />
+              <BudgetTab projection={projection} assumptions={assumptions} onChange={setAssumptions} />
             )}
             {activeTab === 'progress' && (
               <ProgressTab
